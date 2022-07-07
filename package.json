@@ -1,0 +1,22 @@
+{
+  "name": "11",
+  "version": "1.0.0",
+  "description": "Proyecto con bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass --include-path sass ./sass/index.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teovinaraz/Proyecto-Guias-LoL.git"
+  },
+  "author": "Teo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teovinaraz/Proyecto-Guias-LoL/issues"
+  },
+  "homepage": "https://github.com/teovinaraz/Proyecto-Guias-LoL#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
