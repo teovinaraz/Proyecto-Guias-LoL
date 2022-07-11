@@ -1,4 +1,10 @@
 
+.nav-link {
+    color: antiquewhite;
+    font-size: 20px;
+    text-decoration: none;
+}
+
 p {
     margin-top: 10px;
 }
@@ -14,4 +20,25 @@ img {
 
 .wavemanagement {
     margin-bottom: 20px;
+}
+
+.footer {
+    background-color: #24262b;
+    padding: 30px 0;
+}
+
+h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+i {
+    margin-right: 20px;
 }
