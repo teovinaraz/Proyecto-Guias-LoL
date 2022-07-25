@@ -12,9 +12,16 @@ p {
     margin-top: 10px;
 }
 
+span {
+    font-size: 14px;
+    font-weight: bolder;
+}
+
 img {
     width: 70%;
     margin-bottom: 20px;
+    align-items: center;
+
 }
 
 .large-image {
@@ -30,6 +37,19 @@ img {
     padding: 30px 0;
 }
 
+h1 {
+    font-weight: bolder;
+    color: $colorh1;
+}
+
+h2 {
+    color: $colorh2;
+}
+
+h3{
+    color: $colorh3;
+}
+
 h4 {
     font-size: 18px;
     color: #ffffff;
@@ -40,6 +60,16 @@ h4 {
 .row {
     display: flex;
     flex-wrap: wrap;
+    margin: 20px;
+}
+
+.card {
+    margin: 10px;
+
+    &-img-top {
+        margin: 13px;
+    }
+
 }
 
 i {
