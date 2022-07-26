@@ -61,13 +61,16 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     margin: 20px;
+    justify-content: space-evenly;
 }
 
 .card {
     margin: 10px;
 
     &-img-top {
-        margin: 13px;
+        align-self: center;
+        margin: 0 10px 0 0;
+
     }
 
 }
