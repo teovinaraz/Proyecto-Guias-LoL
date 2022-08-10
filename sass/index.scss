@@ -34,7 +34,19 @@ img {
 
 .footer {
     background-color: #24262b;
-    padding: 30px 0;
+    padding:20px 0;
+    max-height: 100px;
+    display: flex;
+    flex-direction: row;
+    & .row {
+        display: flex;
+        margin: 0px 20px;
+        & .followMessage{
+            color: rgb(189, 148, 70);
+            font-family: 'Bangers', cursive;
+            font-size: 25px;
+        }
+    }
 }
 
 h1 {
@@ -57,12 +69,7 @@ h4 {
     margin-bottom: 10px;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px;
-    justify-content: space-evenly;
-}
+
 
 .home{
     display: flex;
@@ -70,30 +77,95 @@ h4 {
     align-items: center;
     justify-content: center;
     & > .homeTitle{
-        font-family: 'Bangers', cursive;
-        font-size: 80px;
-        margin-top: 20px;
-        background-color: antiquewhite;
+        margin: 0px auto;
+        text-align: justify;
+        & .title{
+            animation: fadeIn 2s;
+            font-family: 'Bangers', cursive;
+            font-size: 120px;
+            color:rgb(189, 148, 70);
+            padding: 20px 30px;
+        }
+        & .background-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            z-index: -1;
+        }
+        & .subTitle{
+            color: #ffffff;
+            animation: fadeIn 2s;
+            border: 1px solid white;
+            padding: 20px 30px;
+            border-radius: 20px;
+            background-color: rgba(255,255,255,0.2);
+        }
     }
-    & .subTitle{
-        background-color: antiquewhite;
+    & .cardContainer{
+        display: flex;
+        margin: 30px 0px;
+        & .card{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(35, 50, 63, 0.9);
+            height: 400px;
+            width: 400px;
+            border-radius: 30px;
+            box-shadow: 5px 3px 0 rgba(28, 41, 56, 0.1);
+            & .cardImg{
+                width: 300px;
+                height: 200px;
+                margin: 20px 20px 20px 0px;
+                border-radius: 10px;
+                transition: none;
+            }
+            & .cardBody{
+                text-align: center;
+                font-size: 15px;
+                font-weight: 600;
+                padding: 0px 20px;
+                color:white;
+                & button{
+                    position: relative;
+                    display: inline-block;
+                    background-image: linear-gradient(rgb(189, 148, 70), rgb(189, 148, 70));
+                    background-position: 50% 50%;
+                    background-repeat: no-repeat;
+                    background-size: 0% 100%;
+                    transition: background-size .1s, color .3s;
+                    height: 43px;
+                    border: 1px solid rgb(189, 148, 70);
+                    background-color: transparent;
+                    color: rgb(189, 148, 70);
+                    cursor: pointer;
+                    border-radius: 20px;
+                    font-weight: 600;
+                    padding: 5px 10px 5px 10px;
+                    &:hover{
+                        background-size: 100% 100%;
+                        color: #fff;
+                    }
+                }
+            }
+           
+        }
     }
-
 }
 
-
-
-#background-video {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
   }
+
+
+
+
+
 
 .card {
     margin: 10px;
